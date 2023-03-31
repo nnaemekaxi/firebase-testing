@@ -1,0 +1,3227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  margin: 0 -6.625rem;
+  padding: 3rem 8.5rem;
+}
+
+.container-layout {
+  padding: 0 1.7rem 5rem;
+}
+
+.btn {
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 1440px) {
+  .btn {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .btn {
+    font-size: 1.925rem;
+  }
+}
+
+.color-btn {
+  background-color: hsl(217, 92%, 51%);
+  color: hsl(0, 0%, 98%);
+}
+
+.white-btn {
+  color: hsl(0, 0%, 26%);
+}
+
+nav {
+  width: 100%;
+}
+nav > .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 2rem 0;
+}
+nav > .container .navbar-title {
+  font-weight: 700;
+  font-size: 1.563rem;
+  padding: 0.3125rem 0;
+}
+@media only screen and (min-width: 1440px) {
+  nav > .container .navbar-title {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  nav > .container .navbar-title {
+    font-size: 2.363rem;
+  }
+}
+nav > .container .navbar-title span:first-child {
+  color: hsl(0, 0%, 33%);
+}
+nav > .container .navbar-title span:last-child {
+  color: hsl(217, 92%, 51%);
+}
+nav > .container .navbar-items {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.125rem;
+  margin: 0.5rem auto;
+}
+@media only screen and (min-width: 1440px) {
+  nav > .container .navbar-items {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  nav > .container .navbar-items {
+    font-size: 1.925rem;
+  }
+}
+nav > .container .navbar-items-active {
+  font-weight: 700;
+}
+nav > .container .navbar-items .navlinks-wrapper {
+  display: flex;
+  gap: 2.8rem;
+  text-transform: capitalize;
+}
+nav > .container .navbar-items .login-wrapper {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.image-text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.image-text-wrapper img {
+  border-radius: 50%;
+  width: 1.125rem;
+  object-fit: cover;
+  height: 1.125rem;
+}
+.image-text-wrapper p {
+  font-size: 1.125rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+@media only screen and (min-width: 1440px) {
+  .image-text-wrapper p {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .image-text-wrapper p {
+    font-size: 1.925rem;
+  }
+}
+
+.demo-leaderboard {
+  background: hsl(204, 100%, 98%);
+  border-radius: 0.938rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 0.8rem 2rem;
+  width: 100%;
+}
+.demo-leaderboard .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.demo-leaderboard .header h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .demo-leaderboard .header h4 {
+    font-size: 1.175rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .demo-leaderboard .header h4 {
+    font-size: 1.675rem;
+  }
+}
+.demo-leaderboard .header h5 {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .demo-leaderboard .header h5 {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .demo-leaderboard .header h5 {
+    font-size: 1.55rem;
+  }
+}
+.demo-leaderboard .header p {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 1440px) {
+  .demo-leaderboard .header p {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .demo-leaderboard .header p {
+    font-size: 1.55rem;
+  }
+}
+.demo-leaderboard .main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.demo-leaderboard .main .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.demo-leaderboard .main .content h5 {
+  font-size: 1.125rem;
+}
+@media only screen and (min-width: 1440px) {
+  .demo-leaderboard .main .content h5 {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .demo-leaderboard .main .content h5 {
+    font-size: 1.925rem;
+  }
+}
+.demo-leaderboard .main .content p {
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 1440px) {
+  .demo-leaderboard .main .content p {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .demo-leaderboard .main .content p {
+    font-size: 1.925rem;
+  }
+}
+.demo-leaderboard .main .participants {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.demo-leaderboard .main .participants .details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 0.5rem;
+}
+
+.leaderboard {
+  background: hsl(0, 0%, 98%);
+  border-radius: 0.625rem;
+  padding: 1rem 1.784rem;
+  margin: 0 auto;
+  max-width: 21.25rem;
+}
+.leaderboard .header {
+  text-align: center;
+}
+.leaderboard .header h2 {
+  font-size: 1.25rem;
+}
+@media only screen and (min-width: 1440px) {
+  .leaderboard .header h2 {
+    font-size: 1.55rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .leaderboard .header h2 {
+    font-size: 2.05rem;
+  }
+}
+.leaderboard .participants {
+  display: flex;
+  flex-direction: column;
+  gap: 1.24rem;
+  margin-top: 1.31rem;
+  margin-bottom: 3.53rem;
+}
+.leaderboard .participants .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+@media only screen and (min-width: 1440px) {
+  .leaderboard .participants .content {
+    font-size: 1.175rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .leaderboard .participants .content {
+    font-size: 1.675rem;
+  }
+}
+.leaderboard .participants .content .image-text-wrapper img {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+.leaderboard .participants .content .image-text-wrapper p {
+  font-size: 0.875rem;
+}
+@media only screen and (min-width: 1440px) {
+  .leaderboard .participants .content .image-text-wrapper p {
+    font-size: 1.175rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .leaderboard .participants .content .image-text-wrapper p {
+    font-size: 1.675rem;
+  }
+}
+.leaderboard .btn-wrapper button {
+  font-size: 0.875rem;
+  width: 100%;
+}
+@media only screen and (min-width: 1440px) {
+  .leaderboard .btn-wrapper button {
+    font-size: 1.175rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .leaderboard .btn-wrapper button {
+    font-size: 1.675rem;
+  }
+}
+
+.coin {
+  background-color: hsl(0, 0%, 94%);
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.3rem 1.6rem;
+  width: fit-content;
+}
+.coin p {
+  font-size: 1.125rem;
+}
+@media only screen and (min-width: 1440px) {
+  .coin p {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .coin p {
+    font-size: 1.925rem;
+  }
+}
+
+.icon-text-wrapper {
+  background: hsl(0, 0%, 98%);
+  border-radius: 0.938rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.63rem;
+  width: 4rem;
+}
+.icon-text-wrapper .icon-wrapper {
+  background-color: hsl(217, 92%, 51%);
+  border-radius: 0.938rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem;
+  width: fit-content;
+}
+.icon-text-wrapper .icon-wrapper svg {
+  width: 0.83rem;
+  height: 0.83rem;
+}
+.icon-text-wrapper p {
+  font-size: 0.563rem;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 1440px) {
+  .icon-text-wrapper p {
+    font-size: 0.863rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .icon-text-wrapper p {
+    font-size: 1.363rem;
+  }
+}
+
+.price-card-wrapper {
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 23.938rem;
+  padding: 1rem 0.7rem;
+}
+.price-card-wrapper .title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.price-card-wrapper .title-wrapper h3 {
+  font-size: 1.563rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .price-card-wrapper .title-wrapper h3 {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .price-card-wrapper .title-wrapper h3 {
+    font-size: 2.363rem;
+  }
+}
+.price-card-wrapper p {
+  font-size: 1rem;
+}
+@media only screen and (min-width: 1440px) {
+  .price-card-wrapper p {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .price-card-wrapper p {
+    font-size: 1.8rem;
+  }
+}
+.price-card-wrapper svg {
+  align-self: flex-end;
+}
+
+.test-card {
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  max-width: 40.75rem;
+}
+.test-card .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.test-card .details .topic-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: center;
+}
+.test-card .details .topic-wrapper h5 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1440px) {
+  .test-card .details .topic-wrapper h5 {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .test-card .details .topic-wrapper h5 {
+    font-size: 1.925rem;
+  }
+}
+.test-card .details .topic-wrapper p {
+  font-size: 0.938rem;
+}
+@media only screen and (min-width: 1440px) {
+  .test-card .details .topic-wrapper p {
+    font-size: 1.238rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .test-card .details .topic-wrapper p {
+    font-size: 1.738rem;
+  }
+}
+.test-card .image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  width: fit-content;
+}
+.text-icon-wrapper p {
+  font-size: 0.5rem;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 1440px) {
+  .text-icon-wrapper p {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .text-icon-wrapper p {
+    font-size: 1.3rem;
+  }
+}
+.text-icon-wrapper .icon-wrapper {
+  background-color: hsl(217, 92%, 90%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.text-icon-wrapper .icon-wrapper svg {
+  width: 0.813rem;
+  height: 0.813rem;
+}
+
+.subject-progress {
+  background-color: hsl(0, 0%, 94%);
+  border-radius: 0.938rem;
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 0.25fr;
+  gap: 0.313rem;
+  max-width: 47.25rem;
+  padding: 2.188rem 0.5rem;
+}
+.subject-progress .image-wrapper {
+  align-self: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+.subject-progress .progress-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 0.25fr;
+  align-items: center;
+  gap: 1rem;
+}
+.subject-progress .progress-wrapper .progress {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.subject-progress .progress-wrapper .progress h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .subject-progress .progress-wrapper .progress h4 {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .subject-progress .progress-wrapper .progress h4 {
+    font-size: 1.55rem;
+  }
+}
+.subject-progress .progress-wrapper h4 {
+  font-size: 0.606rem;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1440px) {
+  .subject-progress .progress-wrapper h4 {
+    font-size: 0.906rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .subject-progress .progress-wrapper h4 {
+    font-size: 1.406rem;
+  }
+}
+.subject-progress .options-wrapper {
+  align-self: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.profile-card {
+  background: hsl(0, 0%, 98%);
+  border-radius: 1.015rem;
+  display: flex;
+  align-items: center;
+  gap: 1.147rem;
+  flex-wrap: wrap;
+  padding: 0.675rem 1.35rem;
+}
+.profile-card .avatar-wrapper .avatar {
+  background: hsl(217, 92%, 90%);
+  border-radius: 50%;
+  display: flex;
+  padding: 0.625rem;
+  width: fit-content;
+}
+.profile-card .avatar-wrapper .avatar img {
+  width: 4.94rem;
+}
+.profile-card .avatar-wrapper h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+@media only screen and (min-width: 1440px) {
+  .profile-card .avatar-wrapper h3 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .profile-card .avatar-wrapper h3 {
+    font-size: 1.8rem;
+  }
+}
+.profile-card .profile-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.88rem;
+}
+.profile-card .profile-details-wrapper .profile-details {
+  display: flex;
+  align-items: center;
+  gap: 1.093rem;
+}
+.profile-card .profile-details-wrapper .profile-details .icon-wrapper {
+  background: hsl(217, 92%, 90%);
+  border-radius: 1.015rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.83rem;
+  height: 3.045rem;
+}
+.profile-card .profile-details-wrapper .profile-details p {
+  font-size: 1.25rem;
+}
+@media only screen and (min-width: 1440px) {
+  .profile-card .profile-details-wrapper .profile-details p {
+    font-size: 1.55rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .profile-card .profile-details-wrapper .profile-details p {
+    font-size: 2.05rem;
+  }
+}
+
+footer {
+  background-color: hsl(217, 92%, 51%);
+  color: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+  padding: 1.7rem 1.8rem 2.4rem;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer .footer .logo-wrapper {
+  margin-bottom: 1.5rem;
+}
+footer .footer .logo-wrapper h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1440px) {
+  footer .footer .logo-wrapper h2 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  footer .footer .logo-wrapper h2 {
+    font-size: 1.8rem;
+  }
+}
+footer .footer .details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 1440px) {
+  footer .footer .details-wrapper {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  footer .footer .details-wrapper {
+    font-size: 1.55rem;
+  }
+}
+footer .footer .details-wrapper h2 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media only screen and (min-width: 1440px) {
+  footer .footer .details-wrapper h2 {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  footer .footer .details-wrapper h2 {
+    font-size: 1.925rem;
+  }
+}
+footer .footer .details-wrapper a {
+  color: hsl(0, 0%, 98%);
+  text-decoration: underline;
+}
+footer .footer .capitalize {
+  text-transform: capitalize;
+}
+footer .footer .input-wrapper {
+  background: hsl(0, 0%, 88%);
+  border: 0.109714px solid hsl(0, 0%, 58%);
+  border-radius: 0.313rem;
+  display: flex;
+  justify-content: space-between;
+  width: 12rem;
+}
+footer .footer .input-wrapper input {
+  all: unset;
+  padding-left: 0.6rem;
+}
+footer .footer .input-wrapper input,
+footer .footer .input-wrapper button {
+  font-size: 0.563rem;
+}
+@media only screen and (min-width: 1440px) {
+  footer .footer .input-wrapper input,
+  footer .footer .input-wrapper button {
+    font-size: 0.863rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  footer .footer .input-wrapper input,
+  footer .footer .input-wrapper button {
+    font-size: 1.363rem;
+  }
+}
+footer .social-icons-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem auto 0;
+}
+footer .social-icons-wrapper .icon-wrapper {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+footer .copyright-wrapper {
+  font-size: 0.75rem;
+  text-align: center;
+}
+@media only screen and (min-width: 1440px) {
+  footer .copyright-wrapper {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  footer .copyright-wrapper {
+    font-size: 1.55rem;
+  }
+}
+
+.nav > .outlet-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.94rem 2rem 0.81rem;
+}
+.nav > .outlet-nav div .controls {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 1440px) {
+  .nav > .outlet-nav div .controls {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .nav > .outlet-nav div .controls {
+    font-size: 1.55rem;
+  }
+}
+.nav > .outlet-nav .navbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.68rem;
+  margin-left: auto;
+}
+
+.navbar-title {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 1440px) {
+  .navbar-title {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .navbar-title {
+    font-size: 1.55rem;
+  }
+}
+.navbar-title span:first-child {
+  color: hsl(0, 0%, 33%);
+}
+.navbar-title span:last-child {
+  color: hsl(217, 92%, 51%);
+}
+
+.MuiDrawer-docked .MuiList-root {
+  padding: 3.14rem 0.734rem;
+}
+.MuiDrawer-docked .MuiList-root .MuiListItemButton-root {
+  border-radius: 0.73rem;
+  color: hsl(220, 9%, 46%);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.734rem;
+  text-transform: capitalize;
+  transition: all 600ms ease-in-out;
+}
+@media only screen and (min-width: 1440px) {
+  .MuiDrawer-docked .MuiList-root .MuiListItemButton-root {
+    font-size: 1.175rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .MuiDrawer-docked .MuiList-root .MuiListItemButton-root {
+    font-size: 1.675rem;
+  }
+}
+.MuiDrawer-docked .MuiList-root .MuiListItemButton-root:hover {
+  background-color: hsl(217, 92%, 51%);
+  color: hsl(0, 0%, 100%);
+}
+.MuiDrawer-docked .MuiList-root .MuiListItemButton-root:hover .MuiListItemIcon-root svg {
+  color: hsl(0, 0%, 100%);
+}
+.MuiDrawer-docked .MuiList-root > .Mui-selected, .MuiDrawer-docked .MuiList-root > .Mui-focusVisible {
+  background-color: hsl(217, 92%, 51%);
+  color: hsl(0, 0%, 100%);
+}
+.MuiDrawer-docked .MuiList-root > .Mui-selected .MuiListItemIcon-root svg, .MuiDrawer-docked .MuiList-root > .Mui-focusVisible .MuiListItemIcon-root svg {
+  color: hsl(0, 0%, 100%);
+}
+
+.sidemenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sidemenu .text-icon-wrapper {
+  flex-direction: row-reverse;
+  width: unset;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 5.125rem;
+  overflow-x: hidden;
+  padding-top: 3.49rem;
+}
+.home .hero-mobile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 3.75rem;
+}
+.home .hero-mobile-text h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.128rem;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-mobile-text h1 {
+    font-size: 2.175rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-mobile-text h1 {
+    font-size: 2.675rem;
+  }
+}
+.home .hero-mobile-text p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-mobile-text p {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-mobile-text p {
+    font-size: 1.8rem;
+  }
+}
+.home .hero-mobile button {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-mobile button {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-mobile button {
+    font-size: 1.55rem;
+  }
+}
+.home .hero-mobile .avatar-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+.home .hero-mobile .avatar-group h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-mobile .avatar-group h2 {
+    font-size: 1.55rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-mobile .avatar-group h2 {
+    font-size: 2.05rem;
+  }
+}
+.home .hero-mobile .avatar-group p {
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-mobile .avatar-group p {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-mobile .avatar-group p {
+    font-size: 1.925rem;
+  }
+}
+.home .hero-mobile .image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+.home .hero-mobile .image-wrapper img {
+  border-radius: 0.625rem;
+}
+.home .hero-mobile .image-wrapper .testimonial {
+  background-color: hsl(0, 0%, 98%);
+  border: 1px solid hsl(0, 0%, 88%);
+  border-radius: 0.313rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 25%;
+  left: 0;
+}
+.home .hero-mobile .image-wrapper .testimonial .avatar {
+  background-color: hsl(0, 0%, 88%);
+  border-radius: 50%;
+  height: 2.188rem;
+  width: 2.188rem;
+}
+.home .hero-mobile .image-wrapper .testimonial .text-wrapper h5,
+.home .hero-mobile .image-wrapper .testimonial .text-wrapper p {
+  font-size: 0.938rem;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-mobile .image-wrapper .testimonial .text-wrapper h5,
+  .home .hero-mobile .image-wrapper .testimonial .text-wrapper p {
+    font-size: 1.238rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-mobile .image-wrapper .testimonial .text-wrapper h5,
+  .home .hero-mobile .image-wrapper .testimonial .text-wrapper p {
+    font-size: 1.738rem;
+  }
+}
+.home .hero-mobile .image-wrapper .testimonial .text-wrapper h5 {
+  font-weight: 600;
+}
+.home .hero-desktop {
+  display: none;
+  gap: 2rem;
+}
+.home .hero-desktop-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.home .hero-desktop-text h1 {
+  color: hsl(0, 0%, 33%);
+  font-size: 3.375rem;
+  font-weight: 700;
+  line-height: 4.063rem;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-desktop-text h1 {
+    font-size: 3.675rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-desktop-text h1 {
+    font-size: 4.175rem;
+  }
+}
+.home .hero-desktop-text p {
+  font-size: 1.125rem;
+  line-height: 190%;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-desktop-text p {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-desktop-text p {
+    font-size: 1.925rem;
+  }
+}
+.home .hero-desktop-text button {
+  font-size: 1.125rem;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-desktop-text button {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-desktop-text button {
+    font-size: 1.925rem;
+  }
+}
+.home .hero-desktop-text .avatar-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.home .hero-desktop-text .avatar-group h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-desktop-text .avatar-group h2 {
+    font-size: 1.55rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-desktop-text .avatar-group h2 {
+    font-size: 2.05rem;
+  }
+}
+.home .hero-desktop-text .avatar-group p {
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-desktop-text .avatar-group p {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-desktop-text .avatar-group p {
+    font-size: 1.925rem;
+  }
+}
+.home .hero-desktop .image-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+}
+.home .hero-desktop .image-wrapper .image img {
+  border-radius: 0.625rem;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.home .hero-desktop .image-wrapper .image-1 {
+  width: 16.563rem;
+}
+.home .hero-desktop .image-wrapper .image-2 {
+  width: 12.125rem;
+}
+.home .hero-desktop .image-wrapper .testimonial {
+  background-color: hsl(0, 0%, 98%);
+  border: 1px solid hsl(0, 0%, 88%);
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 75%;
+  left: -10%;
+}
+.home .hero-desktop .image-wrapper .testimonial .text-wrapper h5,
+.home .hero-desktop .image-wrapper .testimonial .text-wrapper p {
+  font-size: 0.938rem;
+}
+@media only screen and (min-width: 1440px) {
+  .home .hero-desktop .image-wrapper .testimonial .text-wrapper h5,
+  .home .hero-desktop .image-wrapper .testimonial .text-wrapper p {
+    font-size: 1.238rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .hero-desktop .image-wrapper .testimonial .text-wrapper h5,
+  .home .hero-desktop .image-wrapper .testimonial .text-wrapper p {
+    font-size: 1.738rem;
+  }
+}
+.home .hero-desktop .image-wrapper .testimonial .text-wrapper h5 {
+  font-weight: 600;
+}
+.home .stats {
+  background-color: hsl(204, 100%, 98%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+}
+.home .stats-details {
+  text-align: center;
+}
+.home .stats-details h2 {
+  font-size: 1.563rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .home .stats-details h2 {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .stats-details h2 {
+    font-size: 2.363rem;
+  }
+}
+.home .stats-details h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+@media only screen and (min-width: 1440px) {
+  .home .stats-details h3 {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .stats-details h3 {
+    font-size: 1.925rem;
+  }
+}
+.home .middle-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.home .middle-section .text-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.home .middle-section .text-details h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .home .middle-section .text-details h4 {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .middle-section .text-details h4 {
+    font-size: 1.925rem;
+  }
+}
+.home .middle-section .text-details p {
+  font-size: 1rem;
+}
+@media only screen and (min-width: 1440px) {
+  .home .middle-section .text-details p {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .middle-section .text-details p {
+    font-size: 1.8rem;
+  }
+}
+.home .middle-section .text-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.home .middle-section .text-details-wrapper img {
+  border-radius: 0.4rem;
+  max-width: 80%;
+}
+.home .middle-section .text-details-wrapper .benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 1rem;
+}
+.home .middle-section .text-details-wrapper .benefits-detail {
+  background: hsl(0, 0%, 98%);
+  border-radius: 0.938rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+}
+.home .middle-section .text-details-wrapper .benefits-detail .icon-wrapper {
+  background-color: hsl(217, 92%, 51%);
+  border-radius: 0.938rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem;
+  width: fit-content;
+}
+.home .middle-section .text-details-wrapper .benefits-detail h5 {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .home .middle-section .text-details-wrapper .benefits-detail h5 {
+    font-size: 1.175rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .middle-section .text-details-wrapper .benefits-detail h5 {
+    font-size: 1.675rem;
+  }
+}
+.home .middle-section .text-details-wrapper .benefits-detail p {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 1440px) {
+  .home .middle-section .text-details-wrapper .benefits-detail p {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .middle-section .text-details-wrapper .benefits-detail p {
+    font-size: 1.55rem;
+  }
+}
+.home .feedback-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .feedback-wrapper h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .home .feedback-wrapper h4 {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .feedback-wrapper h4 {
+    font-size: 1.925rem;
+  }
+}
+.home .call-to-action {
+  background-color: hsl(204, 100%, 98%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+.home .call-to-action h2 {
+  font-size: 1.563rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .home .call-to-action h2 {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .call-to-action h2 {
+    font-size: 2.363rem;
+  }
+}
+.home .mobile-view-btn button {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 1440px) {
+  .home .mobile-view-btn button {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .home .mobile-view-btn button {
+    font-size: 1.55rem;
+  }
+}
+.home .desktop-view-btn {
+  display: none;
+}
+
+.mainSignInContainer {
+  font-size: 0.938rem;
+}
+@media only screen and (min-width: 1440px) {
+  .mainSignInContainer {
+    font-size: 1.238rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .mainSignInContainer {
+    font-size: 1.738rem;
+  }
+}
+.mainSignInContainer .signInImageContainer {
+  background: url("../assets/images/SignInImage(smallScreens).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+.mainSignInContainer .signInContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.mainSignInContainer .signInContainer .signIcon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.mainSignInContainer .signInContainer .signIcon svg {
+  height: 30px;
+  width: 30px;
+}
+.mainSignInContainer .signInContainer .form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.mainSignInContainer .signInContainer .form-container .form-items {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.mainSignInContainer .signInContainer .form-container .form-items input {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+@media only screen and (min-width: 1440px) {
+  .mainSignInContainer .signInContainer .form-container .form-items input {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .mainSignInContainer .signInContainer .form-container .form-items input {
+    font-size: 1.8rem;
+  }
+}
+.mainSignInContainer .signInContainer .form-container .remember-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.mainSignInContainer .signInContainer .form-container .remember-div div {
+  display: flex;
+  gap: 10px;
+}
+.mainSignInContainer .signInContainer .form-container .remember-div + div > button {
+  margin-top: 30px;
+  width: 100%;
+}
+.mainSignInContainer .signInContainer .separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.mainSignInContainer .signInContainer .separator::before,
+.mainSignInContainer .signInContainer .separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #000;
+}
+.mainSignInContainer .signInContainer .separator:not(:empty)::before {
+  margin-right: 1em;
+}
+.mainSignInContainer .signInContainer .separator:not(:empty)::after {
+  margin-left: 1em;
+}
+.mainSignInContainer .signInContainer .social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+.mainSignInContainer .signInContainer .social-media-icons svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.mainSignUpContainer {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 1440px) {
+  .mainSignUpContainer {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .mainSignUpContainer {
+    font-size: 1.55rem;
+  }
+}
+.mainSignUpContainer .signUpImageContainer {
+  background: url("../assets/images/SignUpImage(smallScreens).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+.mainSignUpContainer .signUpContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mainSignUpContainer .signUpContainer .signIcon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.mainSignUpContainer .signUpContainer .signIcon svg {
+  height: 30px;
+  width: 30px;
+}
+.mainSignUpContainer .signUpContainer .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mainSignUpContainer .signUpContainer .form-container .form-items {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.mainSignUpContainer .signUpContainer .form-container .form-items input {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+@media only screen and (min-width: 1440px) {
+  .mainSignUpContainer .signUpContainer .form-container .form-items input {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .mainSignUpContainer .signUpContainer .form-container .form-items input {
+    font-size: 1.8rem;
+  }
+}
+.mainSignUpContainer .signUpContainer .form-container .form-items + div > button {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.mainSignUpContainer .signUpContainer .separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.mainSignUpContainer .signUpContainer .separator::before,
+.mainSignUpContainer .signUpContainer .separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #000;
+}
+.mainSignUpContainer .signUpContainer .separator:not(:empty)::before {
+  margin-right: 1em;
+}
+.mainSignUpContainer .signUpContainer .separator:not(:empty)::after {
+  margin-left: 1em;
+}
+.mainSignUpContainer .signUpContainer .social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+.mainSignUpContainer .signUpContainer .social-media-icons svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.study-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 2.625rem;
+  padding: 2.5rem 3rem 2.1rem;
+  width: 100vw;
+}
+.study-plan .text-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.study-plan .text-details .header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.study-plan .text-details .header-wrapper h1 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .study-plan .text-details .header-wrapper h1 {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .study-plan .text-details .header-wrapper h1 {
+    font-size: 1.925rem;
+  }
+}
+.study-plan .text-details p {
+  font-size: 0.875rem;
+}
+@media only screen and (min-width: 1440px) {
+  .study-plan .text-details p {
+    font-size: 1.175rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .study-plan .text-details p {
+    font-size: 1.675rem;
+  }
+}
+.study-plan .categories-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.56rem;
+}
+.study-plan .categories-wrapper .swiper {
+  width: 100%;
+  height: 100%;
+}
+.study-plan .categories-wrapper .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.study-plan .categories-wrapper .review-swiper-button-prev,
+.study-plan .categories-wrapper .review-swiper-button-next {
+  cursor: pointer;
+}
+.study-plan .categories-wrapper .disabled {
+  opacity: 0.5;
+  transition: opacity 500ms ease-in-out;
+}
+.study-plan .schedule .date-picker {
+  width: 100%;
+  max-width: 14.5rem;
+  margin: 2rem auto;
+}
+.study-plan .schedule .date-picker .react-calendar .react-calendar__navigation {
+  display: flex;
+}
+.study-plan .schedule .date-picker .react-calendar .react-calendar__navigation button span {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .study-plan .schedule .date-picker .react-calendar .react-calendar__navigation button span {
+    font-size: 1.175rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .study-plan .schedule .date-picker .react-calendar .react-calendar__navigation button span {
+    font-size: 1.675rem;
+  }
+}
+.study-plan .schedule .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 1440px) {
+  .study-plan .schedule .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .study-plan .schedule .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view {
+    font-size: 1.55rem;
+  }
+}
+.study-plan .schedule .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view .react-calendar__month-view__weekdays {
+  border-bottom: 0.65px solid hsl(0, 0%, 26%);
+  display: flex !important;
+  justify-content: space-around;
+  font-weight: 600;
+  padding: 0.65rem 0 0.5rem;
+}
+.study-plan .schedule .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view .react-calendar__month-view__weekdays .react-calendar__month-view__weekdays__weekday {
+  flex: none !important;
+}
+.study-plan .schedule .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view .react-calendar__month-view__weekdays .react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+.study-plan .schedule .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view .react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+  padding: 0.5rem 0 0.86rem;
+  row-gap: 0.975rem;
+}
+.study-plan .schedule .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view .react-calendar__month-view__days button {
+  padding: 0.5rem 0;
+}
+.study-plan .schedule .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view .react-calendar__month-view__days__day--neighboringMonth {
+  opacity: 0.7;
+}
+.study-plan .schedule .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view .react-calendar__tile--range {
+  border-bottom: 0.65px solid hsl(0, 0%, 26%);
+}
+.study-plan .schedule .date-picker .react-calendar .highlight {
+  background-color: hsl(217, 92%, 51%);
+  border-radius: 50%;
+  color: hsl(0, 0%, 100%);
+}
+.study-plan .schedule hr {
+  border: 0.5px solid hsl(0, 0%, 58%);
+  margin-bottom: 3.063rem;
+}
+.study-plan .schedule .create-schedule > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.94rem;
+}
+.study-plan .schedule .create-schedule > div .create-schedule-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+}
+.study-plan .schedule .create-schedule > div .create-schedule-wrapper .MuiButton-outlined {
+  color: hsl(0, 0%, 33%);
+  border-bottom: 1.5px solid hsl(217, 92%, 51%);
+  border-radius: 0;
+  font-family: inherit;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 1440px) {
+  .study-plan .schedule .create-schedule > div .create-schedule-wrapper .MuiButton-outlined {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .study-plan .schedule .create-schedule > div .create-schedule-wrapper .MuiButton-outlined {
+    font-size: 1.55rem;
+  }
+}
+.study-plan .study-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 1.063rem;
+}
+.study-plan .study-progress .chart-wrapper {
+  display: flex;
+}
+
+.pricingContainer {
+  padding: 2.74rem 1.7rem 0;
+}
+.pricingContainer .descriptionSection {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 33px;
+}
+@media only screen and (min-width: 1440px) {
+  .pricingContainer .descriptionSection {
+    font-size: 1.55rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .pricingContainer .descriptionSection {
+    font-size: 2.05rem;
+  }
+}
+.pricingContainer .pricingHeroSection img {
+  display: none;
+}
+.pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+  margin: 30px 0px;
+}
+.pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingFeatures {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media only screen and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingFeatures {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingFeatures {
+    font-size: 1.8rem;
+  }
+}
+.pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingFeatures .pricingFeaturesItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pricingContainer .pricingHeroSection + p {
+  margin: 3.3rem 0px 2rem;
+}
+.pricingContainer .pricingCardContainer {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.pricingContainer .pricingCardContainer .pricingCardItem {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 18px 13px;
+}
+.pricingContainer .pricingCardContainer .pricingCardItem .pricingCardItemTop {
+  display: flex;
+  justify-content: space-between;
+}
+.pricingContainer .pricingCardContainer .pricingCardItem .pricingCardItemTop .durationSection {
+  display: flex;
+  flex-direction: column;
+}
+.pricingContainer .pricingCardContainer .pricingCardItem .pricingCardItemTop .durationSection p {
+  margin: 5px 0px;
+}
+.pricingContainer .pricingCardContainer .pricingCardItem .pricingCardItemBottom {
+  text-align: right;
+}
+
+.take-a-test {
+  display: flex;
+  flex-direction: column;
+  gap: 2.53rem;
+  padding: 1.063rem 1.875rem 2.67rem;
+}
+.take-a-test .header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.take-a-test .header .text-wrapper h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1440px) {
+  .take-a-test .header .text-wrapper h1 {
+    font-size: 1.55rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .take-a-test .header .text-wrapper h1 {
+    font-size: 2.05rem;
+  }
+}
+.take-a-test .header .text-wrapper p {
+  color: hsl(0, 0%, 58%);
+  font-size: 0.875rem;
+}
+@media only screen and (min-width: 1440px) {
+  .take-a-test .header .text-wrapper p {
+    font-size: 1.175rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .take-a-test .header .text-wrapper p {
+    font-size: 1.675rem;
+  }
+}
+.take-a-test .progress {
+  display: flex;
+  flex-direction: column;
+  gap: 1.063rem;
+}
+.take-a-test .progress .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.take-a-test .progress .text-wrapper h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1440px) {
+  .take-a-test .progress .text-wrapper h2 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .take-a-test .progress .text-wrapper h2 {
+    font-size: 1.8rem;
+  }
+}
+.take-a-test .progress .text-wrapper p {
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 1440px) {
+  .take-a-test .progress .text-wrapper p {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .take-a-test .progress .text-wrapper p {
+    font-size: 1.55rem;
+  }
+}
+.take-a-test .progress .subject-progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.063rem;
+}
+.take-a-test .available-test {
+  display: flex;
+  flex-direction: column;
+  gap: 0.98rem;
+}
+.take-a-test .available-test h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1440px) {
+  .take-a-test .available-test h2 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .take-a-test .available-test h2 {
+    font-size: 1.8rem;
+  }
+}
+.take-a-test .available-test .test-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.73rem;
+}
+.take-a-test .available-test .test-card-wrapper .test-card {
+  justify-content: space-between;
+  flex-wrap: unset;
+  gap: unset;
+  padding: 0.8rem 0.7rem;
+}
+.take-a-test .available-test .test-card-wrapper .test-card .details {
+  display: unset;
+}
+.take-a-test .available-test .test-card-wrapper .test-card .details .coin p,
+.take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper h5,
+.take-a-test .available-test .test-card-wrapper .test-card .details button {
+  font-size: 0.606rem;
+}
+@media only screen and (min-width: 1440px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .details .coin p,
+  .take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper h5,
+  .take-a-test .available-test .test-card-wrapper .test-card .details button {
+    font-size: 0.906rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .details .coin p,
+  .take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper h5,
+  .take-a-test .available-test .test-card-wrapper .test-card .details button {
+    font-size: 1.406rem;
+  }
+}
+.take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper p {
+  font-size: 0.543rem;
+}
+@media only screen and (min-width: 1440px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper p {
+    font-size: 0.843rem;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper p {
+    font-size: 1.343rem;
+  }
+}
+.take-a-test .available-test .test-card-wrapper .test-card .details .coin,
+.take-a-test .available-test .test-card-wrapper .test-card .details button {
+  width: 3.92rem;
+}
+.take-a-test .available-test .test-card-wrapper .test-card .details .coin {
+  padding: 0.38rem;
+}
+.take-a-test .available-test .test-card-wrapper .test-card .details .coin svg {
+  width: 12.31px;
+  height: 12.59px;
+}
+.take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper {
+  margin-top: 1.05rem;
+  margin-bottom: 0.52rem;
+}
+.take-a-test .available-test .test-card-wrapper .test-card .image-wrapper img {
+  width: 8.32rem;
+  height: 6.4rem;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .container-layout {
+    padding: 1.4rem 6.625rem 2.1rem;
+  }
+  .nav > .container {
+    padding: 1.4rem 6.625rem 0;
+  }
+  .nav .signin-nav {
+    padding: 1.17rem 2.3rem 0;
+  }
+  .nav .pricing-nav {
+    padding: 1.86rem 5.99rem 0;
+  }
+  .outlet-wrapper .nav > .outlet-nav {
+    padding: 1.61rem 2.42rem 1.7rem;
+  }
+  .outlet-wrapper .navbar-title {
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .outlet-wrapper .navbar-title {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .outlet-wrapper .navbar-title {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .icon-text-wrapper {
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+  .icon-text-wrapper .icon-wrapper svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .icon-text-wrapper p {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .icon-text-wrapper p {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .icon-text-wrapper p {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mainSignUpContainer {
+    font-size: 1.125rem;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .mainSignUpContainer {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .mainSignUpContainer {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mainSignUpContainer .signUpImageContainer {
+    background-image: url("../assets/images/image11.png");
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mainSignUpContainer .signUpContainer {
+    padding: 0px 50px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mainSignInContainer {
+    font-size: 1.125rem;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .mainSignInContainer {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .mainSignInContainer {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mainSignInContainer .signInImageContainer {
+    background-image: url("../assets/images/image12.png");
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mainSignInContainer .signInContainer {
+    padding: 0px 50px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pricingContainer {
+    padding: 0rem 6rem;
+  }
+  .pricingContainer .descriptionSection {
+    margin: 30px auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 48px;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .pricingContainer .descriptionSection {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .pricingContainer .descriptionSection {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    margin: 0px 0px 84px;
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingFeatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home .hero-mobile-text {
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .home .hero-mobile .image-wrapper {
+    flex-direction: row;
+  }
+  .home .hero-mobile .image-wrapper .testimonial {
+    top: 70%;
+    margin-left: -3rem;
+  }
+  .home .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  .home .banner {
+    padding: 3rem 1rem;
+  }
+  .home .middle-section .text-details h4 {
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .home .middle-section .text-details h4 {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .home .middle-section .text-details h4 {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home .middle-section .grid-tc-1fr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home .middle-section .text-details-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .home .middle-section .text-details-wrapper img {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home .middle-section .reverse > .text-details {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  .home .middle-section .reverse > .demo-leaderboard {
+    grid-column: 1/2;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .footer {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  footer .footer .logo-wrapper h2 {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  footer .footer .logo-wrapper h2 {
+    font-size: 2.05rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  footer .footer .logo-wrapper h2 {
+    font-size: 2.55rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .footer .details-wrapper h2 {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .social-icons-wrapper {
+    margin: 2rem 0 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .hr-wrapper hr {
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .study-plan {
+    padding: 3.5rem 2.5rem 5.875rem;
+    gap: 5.875rem;
+  }
+  .study-plan .text-details .header-wrapper h1 {
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .study-plan .text-details .header-wrapper h1 {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .study-plan .text-details .header-wrapper h1 {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .study-plan .text-details p {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .study-plan .text-details p {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .study-plan .text-details p {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .study-plan .categories-wrapper .swiper .icon-text-wrapper {
+    width: 9rem;
+  }
+  .study-plan .categories-wrapper svg {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+  .study-plan .categories-wrapper .review-swiper-button-prev {
+    margin-right: 3.5rem;
+  }
+  .study-plan .categories-wrapper .review-swiper-button-next {
+    margin-left: 3.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .study-plan .schedule .date-schedule-wrapper {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .study-plan .schedule .date-schedule-wrapper .date-picker {
+    grid-column: 2/3;
+    grid-row: 1;
+    margin-left: 3.8rem;
+    max-width: 22rem;
+  }
+  .study-plan .schedule .date-schedule-wrapper .date-picker .react-calendar .react-calendar__navigation button span {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .study-plan .schedule .date-schedule-wrapper .date-picker .react-calendar .react-calendar__navigation button span {
+    font-size: 1.55rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .study-plan .schedule .date-schedule-wrapper .date-picker .react-calendar .react-calendar__navigation button span {
+    font-size: 2.05rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .study-plan .schedule .date-schedule-wrapper .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .study-plan .schedule .date-schedule-wrapper .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .study-plan .schedule .date-schedule-wrapper .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .study-plan .schedule .date-schedule-wrapper .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view__weekdays {
+    padding: 1rem 0 0.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .study-plan .schedule .date-schedule-wrapper .date-picker .react-calendar .react-calendar__viewContainer .react-calendar__month-view__days {
+    row-gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .study-plan .schedule .date-schedule-wrapper hr {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .study-plan .schedule .date-schedule-wrapper .create-schedule {
+    border-right: 0.5px solid hsl(0, 0%, 58%);
+    grid-column: 1/2;
+    padding: 4rem 0;
+  }
+  .study-plan .schedule .date-schedule-wrapper .create-schedule .create-schedule-wrapper p {
+    font-size: 1.563rem;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .study-plan .schedule .date-schedule-wrapper .create-schedule .create-schedule-wrapper p {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .study-plan .schedule .date-schedule-wrapper .create-schedule .create-schedule-wrapper p {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .study-plan .schedule .date-schedule-wrapper .create-schedule .create-schedule-wrapper .MuiButton-outlined {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .study-plan .schedule .date-schedule-wrapper .create-schedule .create-schedule-wrapper .MuiButton-outlined {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .study-plan .schedule .date-schedule-wrapper .create-schedule .create-schedule-wrapper .MuiButton-outlined {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .study-plan .study-progress {
+    gap: 1.875rem;
+  }
+  .study-plan .study-progress .chart-wrapper {
+    margin-left: 7.563rem;
+  }
+  .study-plan .study-progress .chart-wrapper svg {
+    width: 57rem;
+    height: 39.375rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test {
+    gap: 1.91rem;
+    padding: 2.13rem 1rem 6.86rem 3.7rem;
+  }
+  .take-a-test .header .text-wrapper h1 {
+    font-size: 1.563rem;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .header .text-wrapper h1 {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .header .text-wrapper h1 {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .header .text-wrapper p {
+    color: hsl(0, 0%, 26%);
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .header .text-wrapper p {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .header .text-wrapper p {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .header .profile-card-wrapper {
+    position: absolute;
+    top: 24%;
+    left: 2.42rem;
+    width: 14.45rem;
+    height: 21.44rem;
+  }
+  .take-a-test .header .profile-card-wrapper .profile-card {
+    height: 100%;
+    justify-content: center;
+    gap: 0.69rem;
+    padding: 1.38rem 2.2rem;
+  }
+  .take-a-test .header .profile-card-wrapper .profile-card .avatar-wrapper .avatar img {
+    width: unset;
+  }
+  .take-a-test .header .profile-card-wrapper .profile-card .avatar-wrapper h3 {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .header .profile-card-wrapper .profile-card .avatar-wrapper h3 {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .header .profile-card-wrapper .profile-card .avatar-wrapper h3 {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .header .profile-card-wrapper .profile-card .profile-details-wrapper .profile-details .icon-wrapper {
+    width: 2.61rem;
+    height: 2.81rem;
+  }
+  .take-a-test .header .profile-card-wrapper .profile-card .profile-details-wrapper .profile-details p {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .header .profile-card-wrapper .profile-card .profile-details-wrapper .profile-details p {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .header .profile-card-wrapper .profile-card .profile-details-wrapper .profile-details p {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .progress .text-wrapper h2 {
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .progress .text-wrapper h2 {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .progress .text-wrapper h2 {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .progress .text-wrapper p {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .progress .text-wrapper p {
+    font-size: 1.175rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .progress .text-wrapper p {
+    font-size: 1.675rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .progress .subject-progress-wrapper {
+    gap: 1.5rem;
+  }
+  .take-a-test .progress .subject-progress-wrapper .subject-progress {
+    grid-template-columns: 0.15fr 1fr 0.3fr;
+  }
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .image-wrapper {
+    width: 3.77rem;
+    height: 3.77rem;
+  }
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .progress-wrapper .progress h4 {
+    font-size: 0.938rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .progress-wrapper .progress h4 {
+    font-size: 1.238rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .progress-wrapper .progress h4 {
+    font-size: 1.738rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .progress-wrapper h4 {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .progress-wrapper h4 {
+    font-size: 1.55rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .progress-wrapper h4 {
+    font-size: 2.05rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .options-wrapper .text-icon-wrapper {
+    gap: 0.875rem;
+  }
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .options-wrapper .text-icon-wrapper p {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .options-wrapper .text-icon-wrapper p {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .options-wrapper .text-icon-wrapper p {
+    font-size: 1.55rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .options-wrapper .text-icon-wrapper .icon-wrapper {
+    width: 1.89rem;
+    height: 1.89rem;
+  }
+  .take-a-test .progress .subject-progress-wrapper .subject-progress .options-wrapper .text-icon-wrapper .icon-wrapper svg {
+    width: 1.375rem;
+    height: 1.375rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .available-test h2 {
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .available-test h2 {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .available-test h2 {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .available-test .test-card-wrapper {
+    gap: 1.313rem;
+  }
+  .take-a-test .available-test .test-card-wrapper .test-card {
+    background-color: hsl(217, 92%, 90%);
+    padding: 1.5rem 2.125rem;
+  }
+  .take-a-test .available-test .test-card-wrapper .test-card .details .coin p,
+  .take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper h5,
+  .take-a-test .available-test .test-card-wrapper .test-card .details button {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .details .coin p,
+  .take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper h5,
+  .take-a-test .available-test .test-card-wrapper .test-card .details button {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .details .coin p,
+  .take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper h5,
+  .take-a-test .available-test .test-card-wrapper .test-card .details button {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .details .coin {
+    background-color: hsl(0, 0%, 100%);
+    width: 7rem;
+  }
+  .take-a-test .available-test .test-card-wrapper .test-card .details .coin svg {
+    width: unset;
+    height: unset;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper {
+    margin-top: 1.875rem;
+    margin-bottom: 0.94rem;
+  }
+  .take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper p {
+    font-size: 0.938rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 1440px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper p {
+    font-size: 1.238rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-width: 2560px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .details .topic-wrapper p {
+    font-size: 1.738rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .details button {
+    width: 7.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .take-a-test .available-test .test-card-wrapper .test-card .image-wrapper img {
+    width: unset;
+    height: unset;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container-layout {
+    padding: 3.5rem 6.625rem 2.1rem;
+  }
+  nav > .container {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.42rem 6.5rem 0;
+  }
+  nav > .container .navbar-items {
+    margin: 0;
+  }
+  .mainSignUpContainer {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+  .mainSignUpContainer .signUpImageContainer {
+    background-image: url("../assets/images/image11.png");
+    border-radius: 0px 10px 10px 0px;
+  }
+  .mainSignUpContainer .signUpContainer {
+    padding: 0px 150px;
+    padding-bottom: 100px;
+  }
+  .mainSignInContainer {
+    font-size: 1.125rem;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .mainSignInContainer {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 2560px) {
+  .mainSignInContainer {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mainSignInContainer .signInImageContainer {
+    background-image: url("../assets/images/image12.png");
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mainSignInContainer .signInContainer {
+    padding: 0px 150px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pricingContainer {
+    padding: 0rem 6rem;
+  }
+  .pricingContainer .descriptionSection {
+    margin: 30px auto;
+    text-align: center;
+    width: 80%;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 48px;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .pricingContainer .descriptionSection {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 2560px) {
+  .pricingContainer .descriptionSection {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pricingContainer .pricingHeroSection {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+  .pricingContainer .pricingHeroSection img {
+    display: block;
+    border-radius: 10px;
+  }
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    margin: 0px 0px 50px;
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    font-size: 1.55rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    font-size: 2.05rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingFeatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pricingContainer .pricingCardContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .pricingContainer .pricingCardContainer .pricingCardItem {
+    gap: 1rem;
+    padding: 20px 13px;
+  }
+  .pricingContainer .pricingCardContainer .pricingCardItem h2 {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .pricingContainer .pricingCardContainer .pricingCardItem h2 {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 2560px) {
+  .pricingContainer .pricingCardContainer .pricingCardItem h2 {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home .hero-mobile {
+    display: none;
+  }
+  .home .hero-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+  .home .hero-desktop .image-wrapper {
+    position: absolute;
+    right: -12.625rem;
+  }
+  .home .banner {
+    padding: 3rem 8.5rem;
+  }
+  .home .middle-section .text-details-wrapper {
+    gap: 5rem;
+  }
+  .home .middle-section .text-details-wrapper .benefits {
+    grid-template-columns: repeat(auto-fit, minmax(14.875rem, 1fr));
+  }
+  .home .call-to-action {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .home .call-to-action h2 {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .home .call-to-action h2 {
+    font-size: 2.05rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 2560px) {
+  .home .call-to-action h2 {
+    font-size: 2.55rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home .mobile-view-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .home .desktop-view-btn {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    overflow-x: hidden;
+    padding: 4.56rem 6.375rem 2.938rem;
+  }
+  footer .footer {
+    gap: 10rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .study-plan .schedule .date-schedule-wrapper {
+    grid-template-columns: 1fr 0.7fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .take-a-test {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1.375rem;
+    row-gap: 2.69rem;
+  }
+  .take-a-test .header,
+  .take-a-test .available-test {
+    grid-column: span 12;
+  }
+  .take-a-test .header .text-wrapper h1 {
+    margin-bottom: 0.94rem;
+  }
+  .take-a-test > .progress {
+    gap: 1.25rem;
+    grid-column: 1/9;
+  }
+  .take-a-test .ranking {
+    grid-column: 9/-1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  nav .container .navbar-items {
+    gap: 3rem;
+  }
+  .test-card .details {
+    align-items: center;
+  }
+  .mainSignUpContainer {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+  .mainSignUpContainer .signUpImageContainer {
+    background-image: url("../assets/images/image11.png");
+    border-radius: 0px 10px 10px 0px;
+  }
+  .mainSignUpContainer .signUpContainer {
+    padding: 0px 150px;
+    padding-bottom: 100px;
+  }
+  .mainSignInContainer {
+    font-size: 1.125rem;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+}
+@media only screen and (min-width: 1440px) and (min-width: 1440px) {
+  .mainSignInContainer {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 1440px) and (min-width: 2560px) {
+  .mainSignInContainer {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .mainSignInContainer .signInImageContainer {
+    background-image: url("../assets/images/image12.png");
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .mainSignInContainer .signInContainer {
+    padding: 0px 150px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .pricingContainer {
+    padding: 0rem 6rem;
+  }
+  .pricingContainer .descriptionSection {
+    margin: 30px auto 3.313rem;
+    text-align: center;
+    width: 60%;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 48px;
+  }
+}
+@media only screen and (min-width: 1440px) and (min-width: 1440px) {
+  .pricingContainer .descriptionSection {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (min-width: 1440px) and (min-width: 2560px) {
+  .pricingContainer .descriptionSection {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+  .pricingContainer .pricingHeroSection img {
+    display: block;
+    border-radius: 10px;
+  }
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    margin: 0px 0px 84px;
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 1440px) and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 1440px) and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingFeatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 1440px) and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 1440px) and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .pricingContainer .pricingCardContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .pricingContainer .pricingCardContainer .pricingCardItem {
+    gap: 1rem;
+    padding: 30px 13px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .image-text-wrapper img {
+    width: 1.425rem;
+    height: 1.425rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  nav .container .navbar-items {
+    gap: 5rem;
+  }
+  .coin svg {
+    height: 2.813rem;
+    width: 2.813rem;
+  }
+  .mainSignUpContainer {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+  .mainSignUpContainer .signUpImageContainer {
+    background-image: url("../assets/images/image11.png");
+    border-radius: 0px 10px 10px 0px;
+  }
+  .mainSignUpContainer .signUpContainer {
+    padding: 0px 150px;
+    padding-bottom: 100px;
+  }
+  .mainSignInContainer {
+    font-size: 1.125rem;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+}
+@media only screen and (min-width: 2560px) and (min-width: 1440px) {
+  .mainSignInContainer {
+    font-size: 1.425rem;
+  }
+}
+@media only screen and (min-width: 2560px) and (min-width: 2560px) {
+  .mainSignInContainer {
+    font-size: 1.925rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .mainSignInContainer .signInImageContainer {
+    background-image: url("../assets/images/image12.png");
+    border-radius: 0px 10px 10px 0px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .mainSignInContainer .signInContainer {
+    padding: 0px 150px;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .pricingContainer {
+    padding: 0rem 6rem;
+  }
+  .pricingContainer .descriptionSection {
+    margin: 30px auto 3.313rem;
+    text-align: center;
+    width: 60%;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 48px;
+  }
+}
+@media only screen and (min-width: 2560px) and (min-width: 1440px) {
+  .pricingContainer .descriptionSection {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (min-width: 2560px) and (min-width: 2560px) {
+  .pricingContainer .descriptionSection {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+  .pricingContainer .pricingHeroSection img {
+    display: block;
+    border-radius: 10px;
+  }
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    margin: 0px 0px 84px;
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 2560px) and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 2560px) and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingHeroSectionFeaturesPara {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection .pricingHeroSectionFeatures .pricingFeatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 1.563rem;
+  }
+}
+@media only screen and (min-width: 2560px) and (min-width: 1440px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 1.863rem;
+  }
+}
+@media only screen and (min-width: 2560px) and (min-width: 2560px) {
+  .pricingContainer .pricingHeroSection + p {
+    font-size: 2.363rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .pricingContainer .pricingCardContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .pricingContainer .pricingCardContainer .pricingCardItem {
+    gap: 1rem;
+    padding: 30px 13px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .text-icon-wrapper .icon-wrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .text-icon-wrapper .icon-wrapper svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .image-text-wrapper img {
+    width: 1.925rem;
+    height: 1.925rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .home .hero-desktop {
+    justify-items: center;
+  }
+  .home .middle-section .text-details-wrapper {
+    gap: 10rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  footer .footer {
+    gap: 25rem;
+  }
+  footer .footer .details-wrapper .input-wrapper {
+    width: unset;
+    min-width: 12rem;
+  }
+  footer .social-icons-wrapper .icon-wrapper {
+    width: 3rem;
+    height: 3rem;
+  }
+  footer .social-icons-wrapper .icon-wrapper svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .take-a-test .progress {
+    grid-column: 1/7;
+  }
+  .take-a-test .ranking {
+    grid-column: 7/-1;
+  }
+}
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 26%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
+a {
+  color: hsl(0, 0%, 26%);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+.my-1rem {
+  margin: 1rem 0;
+}/*# sourceMappingURL=main.css.map */

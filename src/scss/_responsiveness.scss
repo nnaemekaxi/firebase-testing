@@ -1,0 +1,925 @@
+@include media-md {
+	.container-layout {
+		padding: 1.4rem 6.625rem 2.1rem;
+	}
+
+	.nav {
+		& > .container {
+			padding: 1.4rem 6.625rem 0;
+		}
+
+		.signin-nav {
+			padding: 1.17rem 2.3rem 0;
+		}
+
+		.pricing-nav {
+			padding: 1.86rem 5.99rem 0;
+		}
+	}
+
+	.outlet-wrapper {
+		.nav {
+			& > .outlet-nav {
+				padding: 1.61rem 2.42rem 1.7rem;
+			}
+		}
+		.navbar-title {
+			@include resize(fs-h5);
+		}
+	}
+
+	.icon-text-wrapper {
+		gap: 1rem;
+		padding: 1rem 2rem;
+
+		.icon-wrapper {
+			svg {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+		}
+		p {
+			@include resize(fs-body2);
+		}
+	}
+
+	.mainSignUpContainer {
+		@include resize(fs-body2);
+		display: grid;
+		grid-template-columns: 0.6fr 1fr;
+		.signUpImageContainer {
+			background-image: url("../assets/images/image11.png");
+			height: 100%;
+			border-radius: 0px 10px 10px 0px;
+		}
+		.signUpContainer {
+			padding: 0px 50px;
+			padding-bottom: 100px;
+		}
+	}
+
+	.mainSignInContainer {
+		@include resize(fs-body2);
+		display: grid;
+		grid-template-columns: 0.6fr 1fr;
+		.signInImageContainer {
+			background-image: url("../assets/images/image12.png");
+			border-radius: 0px 10px 10px 0px;
+			height: 100%;
+		}
+		.signInContainer {
+			padding: 0px 50px;
+			padding-bottom: 200px;
+		}
+	}
+
+	.pricingContainer {
+		padding: 0rem 6rem;
+		.descriptionSection {
+			margin: 30px auto;
+			text-align: center;
+			@include resize(fs-h3);
+			font-weight: weight(xx-bold);
+			line-height: 48px;
+		}
+		.pricingHeroSection {
+			.pricingHeroSectionFeatures {
+				.pricingHeroSectionFeaturesPara {
+					margin: 0px 0px 84px;
+					@include resize(fs-h5);
+				}
+				.pricingFeatures {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 2rem;
+				}
+			}
+		}
+		.pricingHeroSection + p {
+			@include resize(fs-h5);
+		}
+	}
+
+	.home {
+		.hero-mobile {
+			&-text {
+				gap: 2rem;
+				margin-bottom: 2rem;
+			}
+
+			.image-wrapper {
+				flex-direction: row;
+
+				.testimonial {
+					top: 70%;
+					margin-left: -3rem;
+				}
+			}
+		}
+
+		.stats {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.banner {
+			padding: 3rem 1rem;
+		}
+
+		.middle-section {
+			.text-details {
+				h4 {
+					@include resize(fs-h5);
+				}
+			}
+
+			.grid-tc-1fr {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 3rem;
+			}
+
+			.text-details-wrapper {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				justify-items: center;
+
+				img {
+					max-width: 100%;
+				}
+			}
+
+			.reverse {
+				& > .text-details {
+					grid-column: 2/3;
+					grid-row: 1;
+				}
+				& > .demo-leaderboard {
+					grid-column: 1/2;
+				}
+			}
+		}
+	}
+
+	footer {
+		.footer {
+			flex-direction: row;
+			gap: 2.5rem;
+
+			.logo-wrapper {
+				h2 {
+					@include resize(fs-h4);
+				}
+			}
+
+			.details-wrapper {
+				h2 {
+					margin-bottom: 1rem;
+				}
+			}
+		}
+
+		.social-icons-wrapper {
+			margin: 2rem 0 0;
+		}
+
+		.hr-wrapper {
+			hr {
+				position: absolute;
+				width: 100%;
+				left: 0;
+			}
+		}
+	}
+
+	.study-plan {
+		padding: 3.5rem 2.5rem 5.875rem;
+		gap: 5.875rem;
+
+		.text-details {
+			.header-wrapper {
+				h1 {
+					@include resize(fs-h5);
+				}
+			}
+
+			p {
+				@include resize(fs-body2);
+			}
+		}
+
+		.categories-wrapper {
+			.swiper {
+				.icon-text-wrapper {
+					width: 9rem;
+				}
+			}
+			svg {
+				width: 2.6rem;
+				height: 2.6rem;
+			}
+
+			.review-swiper-button-prev {
+				margin-right: 3.5rem;
+			}
+
+			.review-swiper-button-next {
+				margin-left: 3.5rem;
+			}
+		}
+
+		.schedule {
+			.date-schedule-wrapper {
+				display: grid;
+				grid-auto-flow: row;
+				grid-template-columns: 1fr 1fr;
+				align-items: center;
+
+				.date-picker {
+					grid-column: 2/3;
+					grid-row: 1;
+					margin-left: 3.8rem;
+					max-width: 22rem;
+
+					.react-calendar {
+						.react-calendar__navigation {
+							button {
+								span {
+									@include resize(fs-body1);
+								}
+							}
+						}
+
+						.react-calendar__viewContainer {
+							.react-calendar__month-view {
+								@include resize(fs-body2);
+							}
+
+							.react-calendar__month-view__weekdays {
+								padding: 1rem 0 0.75rem;
+							}
+
+							.react-calendar__month-view__days {
+								row-gap: 1.5rem;
+							}
+						}
+					}
+				}
+
+				hr {
+					display: none;
+				}
+
+				.create-schedule {
+					border-right: 0.5px solid $hr-color;
+					grid-column: 1/2;
+					padding: 4rem 0;
+
+					.create-schedule-wrapper {
+						p {
+							@include resize(fs-h5);
+							font-weight: weight(xx-bold);
+						}
+
+						.MuiButton-outlined {
+							@include resize(fs-body2);
+						}
+					}
+				}
+			}
+		}
+
+		.study-progress {
+			gap: 1.875rem;
+
+			.chart-wrapper {
+				margin-left: 7.563rem;
+				svg {
+					width: 57rem;
+					height: 39.375rem;
+				}
+			}
+		}
+	}
+
+	.take-a-test {
+		gap: 1.91rem;
+		padding: 2.13rem 1rem 6.86rem 3.7rem;
+
+		.header {
+			.text-wrapper {
+				h1 {
+					@include resize(fs-h5);
+					font-weight: weight(xx-bold);
+				}
+
+				p {
+					color: $text-body-color;
+					@include resize(fs-body2);
+				}
+			}
+
+			.profile-card-wrapper {
+				position: absolute;
+				top: 24%;
+				left: 2.42rem;
+				width: 14.45rem;
+				height: 21.44rem;
+
+				.profile-card {
+					height: 100%;
+					justify-content: center;
+					gap: 0.69rem;
+					padding: 1.38rem 2.2rem;
+
+					.avatar-wrapper {
+						.avatar {
+							img {
+								width: unset;
+							}
+						}
+
+						h3 {
+							@include resize(fs-body2);
+						}
+					}
+
+					.profile-details-wrapper {
+						.profile-details {
+							.icon-wrapper {
+								width: 2.61rem;
+								height: 2.81rem;
+							}
+
+							p {
+								@include resize(fs-body2);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.progress {
+			.text-wrapper {
+				h2 {
+					@include resize(fs-h5);
+				}
+
+				p {
+					@include resize(fs-body4-2);
+				}
+			}
+
+			.subject-progress-wrapper {
+				gap: 1.5rem;
+
+				.subject-progress {
+					grid-template-columns: 0.15fr 1fr 0.3fr;
+
+					.image-wrapper {
+						width: 3.77rem;
+						height: 3.77rem;
+					}
+
+					.progress-wrapper {
+						.progress {
+							h4 {
+								@include resize(fs-body4);
+							}
+						}
+
+						h4 {
+							@include resize(fs-body1);
+						}
+					}
+
+					.options-wrapper {
+						.text-icon-wrapper {
+							gap: 0.875rem;
+
+							p {
+								@include resize(fs-body5);
+							}
+
+							.icon-wrapper {
+								width: 1.89rem;
+								height: 1.89rem;
+
+								svg {
+									width: 1.375rem;
+									height: 1.375rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.available-test {
+			h2 {
+				@include resize(fs-h5);
+			}
+
+			.test-card-wrapper {
+				gap: 1.313rem;
+
+				.test-card {
+					background-color: $monthly-plan-color;
+					padding: 1.5rem 2.125rem;
+
+					.details {
+						.coin p,
+						.topic-wrapper h5,
+						button {
+							@include resize(fs-body2);
+						}
+
+						.coin {
+							background-color: $white-color;
+							width: 7rem;
+
+							svg {
+								width: unset;
+								height: unset;
+							}
+						}
+
+						.topic-wrapper {
+							margin-top: 1.875rem;
+							margin-bottom: 0.94rem;
+
+							p {
+								@include resize(fs-body4);
+							}
+						}
+
+						button {
+							width: 7.75rem;
+						}
+					}
+
+					.image-wrapper {
+						img {
+							width: unset;
+							height: unset;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-lg {
+	.container-layout {
+		padding: 3.5rem 6.625rem 2.1rem;
+	}
+
+	nav {
+		& > .container {
+			flex-wrap: nowrap;
+			align-items: center;
+			gap: 2rem;
+			padding: 1.42rem 6.5rem 0;
+
+			.navbar-items {
+				// gap: unset;
+				margin: 0;
+			}
+		}
+	}
+
+	.mainSignUpContainer {
+		display: grid;
+		grid-template-columns: 0.6fr 1fr;
+		.signUpImageContainer {
+			background-image: url("../assets/images/image11.png");
+			border-radius: 0px 10px 10px 0px;
+		}
+		.signUpContainer {
+			padding: 0px 150px;
+			padding-bottom: 100px;
+		}
+	}
+
+	.mainSignInContainer {
+		@include resize(fs-body2);
+		display: grid;
+		grid-template-columns: 0.6fr 1fr;
+		.signInImageContainer {
+			background-image: url("../assets/images/image12.png");
+			border-radius: 0px 10px 10px 0px;
+			height: 100%;
+		}
+		.signInContainer {
+			padding: 0px 150px;
+			padding-bottom: 200px;
+		}
+	}
+
+	.pricingContainer {
+		padding: 0rem 6rem;
+		.descriptionSection {
+			margin: 30px auto;
+			text-align: center;
+			width: 80%;
+			@include resize(fs-h3);
+			font-weight: weight(xx-bold);
+			line-height: 48px;
+		}
+		.pricingHeroSection {
+			display: grid;
+			grid-template-columns: 0.5fr 1fr;
+			align-items: center;
+			gap: 2rem;
+
+			img {
+				display: block;
+				border-radius: 10px;
+			}
+			.pricingHeroSectionFeatures {
+				.pricingHeroSectionFeaturesPara {
+					margin: 0px 0px 50px;
+					@include resize(fs-body1);
+				}
+				.pricingFeatures {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 2rem;
+				}
+			}
+		}
+		.pricingHeroSection + p {
+			@include resize(fs-h5);
+		}
+		.pricingCardContainer {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2rem;
+			.pricingCardItem {
+				gap: 1rem;
+				padding: 20px 13px;
+			}
+			.pricingCardItem h2 {
+				@include resize(fs-body2);
+			}
+		}
+	}
+
+	.home {
+		.hero-mobile {
+			display: none;
+		}
+
+		.hero-desktop {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			position: relative;
+
+			.image-wrapper {
+				position: absolute;
+				right: -12.625rem;
+			}
+		}
+
+		.banner {
+			padding: 3rem 8.5rem;
+		}
+
+		.middle-section {
+			.text-details-wrapper {
+				gap: 5rem;
+
+				.benefits {
+					grid-template-columns: repeat(
+						auto-fit,
+						minmax(14.875rem, 1fr)
+					);
+				}
+			}
+		}
+
+		.call-to-action {
+			flex-direction: row;
+			justify-content: space-between;
+
+			h2 {
+				@include resize(fs-h4);
+			}
+		}
+
+		.mobile-view-btn {
+			display: none;
+		}
+
+		.desktop-view-btn {
+			display: block;
+		}
+	}
+
+	footer {
+		overflow-x: hidden;
+		padding: 4.56rem 6.375rem 2.938rem;
+
+		.footer {
+			gap: 10rem;
+		}
+	}
+
+	.study-plan {
+		.schedule {
+			.date-schedule-wrapper {
+				grid-template-columns: 1fr 0.7fr;
+			}
+		}
+	}
+
+	.take-a-test {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		column-gap: 1.375rem;
+		row-gap: 2.69rem;
+
+		.header,
+		.available-test {
+			grid-column: span 12;
+		}
+
+		.header {
+			.text-wrapper {
+				h1 {
+					margin-bottom: 0.94rem;
+				}
+			}
+		}
+
+		& > .progress {
+			gap: 1.25rem;
+			grid-column: 1/9;
+		}
+
+		.ranking {
+			grid-column: 9/-1;
+		}
+	}
+}
+
+@include media-xl {
+	nav {
+		.container {
+			.navbar-items {
+				gap: 3rem;
+			}
+		}
+	}
+
+	.test-card {
+		.details {
+			align-items: center;
+		}
+	}
+
+	.mainSignUpContainer {
+		display: grid;
+		grid-template-columns: 0.6fr 1fr;
+		.signUpImageContainer {
+			background-image: url("../assets/images/image11.png");
+			border-radius: 0px 10px 10px 0px;
+		}
+		.signUpContainer {
+			padding: 0px 150px;
+			padding-bottom: 100px;
+		}
+	}
+
+	.mainSignInContainer {
+		@include resize(fs-body2);
+		display: grid;
+		grid-template-columns: 0.6fr 1fr;
+		.signInImageContainer {
+			background-image: url("../assets/images/image12.png");
+			border-radius: 0px 10px 10px 0px;
+			height: 100%;
+		}
+		.signInContainer {
+			padding: 0px 150px;
+			padding-bottom: 200px;
+		}
+	}
+
+	.pricingContainer {
+		padding: 0rem 6rem;
+		.descriptionSection {
+			margin: 30px auto 3.313rem;
+			text-align: center;
+			width: 60%;
+			@include resize(fs-h3);
+			font-weight: weight(xx-bold);
+			line-height: 48px;
+		}
+		.pricingHeroSection {
+			display: grid;
+			grid-template-columns: 0.6fr 1fr;
+			align-items: center;
+			gap: 2rem;
+
+			img {
+				display: block;
+				border-radius: 10px;
+			}
+			.pricingHeroSectionFeatures {
+				.pricingHeroSectionFeaturesPara {
+					margin: 0px 0px 84px;
+					@include resize(fs-h5);
+				}
+				.pricingFeatures {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 2rem;
+				}
+			}
+		}
+		.pricingHeroSection + p {
+			@include resize(fs-h5);
+		}
+		.pricingCardContainer {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2rem;
+			.pricingCardItem {
+				gap: 1rem;
+				padding: 30px 13px;
+			}
+		}
+	}
+
+	.image-text-wrapper {
+		img {
+			width: 1.425rem;
+			height: 1.425rem;
+		}
+	}
+}
+
+@include media-xxl {
+	nav {
+		.container {
+			.navbar-items {
+				gap: 5rem;
+			}
+		}
+	}
+
+	.coin {
+		svg {
+			height: 2.813rem;
+			width: 2.813rem;
+		}
+	}
+
+	.mainSignUpContainer {
+		display: grid;
+		grid-template-columns: 0.6fr 1fr;
+
+		.signUpImageContainer {
+			background-image: url("../assets/images/image11.png");
+			border-radius: 0px 10px 10px 0px;
+		}
+		.signUpContainer {
+			padding: 0px 150px;
+			padding-bottom: 100px;
+		}
+	}
+
+	.mainSignInContainer {
+		@include resize(fs-body2);
+		display: grid;
+		grid-template-columns: 0.6fr 1fr;
+		.signInImageContainer {
+			background-image: url("../assets/images/image12.png");
+			border-radius: 0px 10px 10px 0px;
+			height: 100%;
+		}
+		.signInContainer {
+			padding: 0px 150px;
+			padding-bottom: 200px;
+		}
+	}
+
+	.pricingContainer {
+		padding: 0rem 6rem;
+		.descriptionSection {
+			margin: 30px auto 3.313rem;
+			text-align: center;
+			width: 60%;
+			@include resize(fs-h3);
+			font-weight: weight(xx-bold);
+			line-height: 48px;
+		}
+		.pricingHeroSection {
+			display: grid;
+			grid-template-columns: 0.6fr 1fr;
+			align-items: center;
+			gap: 2rem;
+
+			img {
+				display: block;
+				border-radius: 10px;
+			}
+			.pricingHeroSectionFeatures {
+				.pricingHeroSectionFeaturesPara {
+					margin: 0px 0px 84px;
+					@include resize(fs-h5);
+				}
+				.pricingFeatures {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 2rem;
+				}
+			}
+		}
+		.pricingHeroSection + p {
+			@include resize(fs-h5);
+		}
+		.pricingCardContainer {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2rem;
+			.pricingCardItem {
+				gap: 1rem;
+				padding: 30px 13px;
+			}
+		}
+	}
+
+	.text-icon-wrapper {
+		.icon-wrapper {
+			width: 3.5rem;
+			height: 3.5rem;
+
+			svg {
+				width: 2rem;
+				height: 2rem;
+			}
+		}
+	}
+
+	.image-text-wrapper {
+		img {
+			width: 1.925rem;
+			height: 1.925rem;
+		}
+	}
+
+	.home {
+		.hero-desktop {
+			justify-items: center;
+		}
+
+		.middle-section {
+			.text-details-wrapper {
+				gap: 10rem;
+			}
+		}
+	}
+
+	footer {
+		.footer {
+			gap: 25rem;
+
+			.details-wrapper {
+				.input-wrapper {
+					width: unset;
+					min-width: 12rem;
+				}
+			}
+		}
+
+		.social-icons-wrapper {
+			.icon-wrapper {
+				width: 3rem;
+				height: 3rem;
+
+				svg {
+					width: 1.5rem;
+					height: 1.5rem;
+				}
+			}
+		}
+	}
+
+	.take-a-test {
+		.progress {
+			grid-column: 1/7;
+		}
+
+		.ranking {
+			grid-column: 7/-1;
+		}
+	}
+}

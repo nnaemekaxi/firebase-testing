@@ -1,0 +1,43 @@
+@import "resets", "variables", "config", "utility", "button", "navbar",
+	"leaderboard", "coin", "card", "footer", "outlet-wrapper", "home", "signin",
+	"signup", "study-plan", "pricing", "take-a-test", "responsiveness";
+
+:root {
+	font-size: 16px;
+}
+
+body {
+	background-color: $white-color;
+	color: $text-body-color;
+	font-family: "Poppins", sans-serif;
+	font-weight: weight(regular);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: capitalize;
+}
+
+a {
+	color: $text-body-color;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+button {
+	background-color: inherit;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	outline: none;
+}
+
+.my-1rem {
+	margin: 1rem 0;
+}

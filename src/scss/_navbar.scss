@@ -1,0 +1,50 @@
+nav {
+	width: 100%;
+
+	& > .container {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 2rem 2rem 0;
+
+		.navbar-title {
+			font-weight: weight(xx-bold);
+			@include resize(fs-h5);
+			padding: 0.3125rem 0;
+
+			span:first-child {
+				color: $text-title-color;
+			}
+			span:last-child {
+				color: $secondary-color;
+			}
+		}
+
+		.navbar-items {
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+			@include resize(fs-body2);
+			margin: 0.5rem auto;
+
+			// TODO: add hover styles for navbar-items
+
+			&-active {
+				// color: $secondary-color;
+				// display: flex;
+				font-weight: weight(xx-bold);
+			}
+
+			.navlinks-wrapper {
+				display: flex;
+				gap: 2.8rem;
+				text-transform: capitalize;
+			}
+
+			.login-wrapper {
+				display: flex;
+				gap: 1.4rem;
+			}
+		}
+	}
+}
