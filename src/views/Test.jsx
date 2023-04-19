@@ -47,7 +47,7 @@ const Test = () => {
 	}
 
 	const handleSubmit = () => {
-		let choices = JSON.parse(localStorage.getItem("choices"))
+		let choices = JSON.parse(localStorage.getItem("choices") || "{}")
 		let values = Object.values(choices);
 		let score = 0;
 		for (let index = 0; index < values.length; index++) {
