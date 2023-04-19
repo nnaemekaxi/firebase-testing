@@ -7,7 +7,8 @@ const Test = () => {
 	const [subject, setSubject] = useState("");
 	const [start, setStart] = useState(true);
 	const [allQuestions, setAllQuestions] = useState(null)
-	const [choices, setChoices] = useState(null);
+	const [choice, setChoice] = useState(JSON.parse(localStorage.getItem("choice")) || {})
+	const [choices, setChoices] = useState([]);
 	const [count, setCount] = useState(0);
 	const [finalScore, setFinalScore] = useState(0);
 	const [publish, setPublish] = useState(false);
@@ -27,7 +28,7 @@ const Test = () => {
 				"AccessToken": "QB-91e2cfa590f5e7fcd4c8"
 				}
 		})
-		setAllQuestions(questions.data.data);					
+		setAllQuestions(questions.data.data);				
 			setTimeout(() => {
 				handleSubmit();;
 				}, 1800000)
@@ -57,18 +58,16 @@ const Test = () => {
 		e.preventDefault();
 		setChoices((prev) => {
 			let data = {...prev, [e.target.name]: e.target.value === e.target.title}
-			console.log(data)
 			localStorage.setItem("choices", JSON.stringify(data));
 			return data;
 	})
-	setChoice((prev) => {
-		let data = {...prev, [e.target.name]: e.target.value}
-		console.log(data)
-		localStorage.setItem("choice", JSON.stringify(data));
-		return data;
-})
-}
+		setChoice((prev) => {
+			let data = {...prev, [e.target.name]: e.target.value}
+			localStorage.setItem("choice", JSON.stringify(data));
+			return data;
+	})
 
+}
 	const getPreviousQuestion = () => {
 		handleChange;
 		if (count <= 0){
@@ -89,7 +88,8 @@ const Test = () => {
 
 	const ResetTest = () =>{
 		setStart(true);
-		localStorage.removeItem("choices")
+		localStorage.removeItem("choices");
+		localStorage.removeItem("choice");
 		setCount(0);
 		location.reload();
 		setPublish(false);
@@ -108,17 +108,17 @@ const Test = () => {
 					<img src={question.image} alt="photo" />
 				  }
 				  <form>
-				  <p><input type="radio" name={question.id} title={question.answer} id="optiona" onChange={handleChange} value="a" className={styles.SelectRadio}/> <label htmlFor="optiona"  className={styles.RadioLabel}>a. {question.option.a}</label></p>
-				  <p><input type="radio" name={question.id} title={question.answer} id="optionb" onChange={handleChange} value="b" className={styles.SelectRadio}/> <label htmlFor="optionb"  className={styles.RadioLabel}>b. {question.option.b}</label></p>
-				  <p><input type="radio" name={question.id} title={question.answer} id="optionc" onChange={handleChange} value="c" className={styles.SelectRadio}/> <label htmlFor="optionc"  className={styles.RadioLabel}>c. {question.option.c}</label></p>
-				  <p><input type="radio" name={question.id} title={question.answer} id="optiond" onChange={handleChange} value="d" className={styles.SelectRadio}/> <label htmlFor="optiond"  className={styles.RadioLabel}>d. {question.option.d}</label></p>
+				  <p><input type="radio" name={question.id} title={question.answer} id="optiona"  checked={choice[question.id] == "a"} onChange={handleChange} value="a" className={styles.SelectRadio}/> <label htmlFor="optiona"  className={styles.RadioLabel}>a. {question.option.a}</label></p>
+				  <p><input type="radio" name={question.id} title={question.answer} id="optionb"  checked={choice[question.id] == "b"} onChange={handleChange} value="b" className={styles.SelectRadio}/> <label htmlFor="optionb"  className={styles.RadioLabel}>b. {question.option.b}</label></p>
+				  <p><input type="radio" name={question.id} title={question.answer} id="optionc"  checked={choice[question.id] == "c"} onChange={handleChange} value="c" className={styles.SelectRadio}/> <label htmlFor="optionc"  className={styles.RadioLabel}>c. {question.option.c}</label></p>
+				  <p><input type="radio" name={question.id} title={question.answer} id="optiond"  checked={choice[question.id] == "d"} onChange={handleChange} value="d" className={styles.SelectRadio}/> <label htmlFor="optiond"  className={styles.RadioLabel}>d. {question.option.d}</label></p>
 				  </form>
 				  </div>			   
 	  })}	  
 	  </div>
 		)
 	  }
-
+	
 	return <div className={styles.TestMain}>
 		{
 			start &&
@@ -180,3 +180,5 @@ const Test = () => {
 };
 
 export default Test;
+
+

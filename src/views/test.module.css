@@ -80,9 +80,7 @@
 .Subject{
     width: 80%;
     position: fixed;
-    top: 50;
-    left: 50;
-    margin: -120px 0 0 0px;
+    top: 65px;
     z-index: 10000;
     font-size: 14px;
     display: flex;
@@ -131,10 +129,14 @@
 .Loading{
     text-align: center;
 }
+@media screen and (max-width: 767px){
+    .Subject{
+        background-color: white;
+    }
+}
 @media screen and (max-width: 600px) {
     .Subject{
         font-size: 12px;
-        margin-top: -110px;
     }
     .Question{
         font-size: 16px;
