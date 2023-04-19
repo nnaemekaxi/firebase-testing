@@ -14,6 +14,12 @@ const Test = () => {
 	const [publish, setPublish] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
 	const [response, setResponse] = useState(false);
+	const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+		11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+		21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+		31, 32, 33, 34, 35, 36, 37, 38, 39, 40
+	];
+
 	
 	async function handleTest(e){
 		e.preventDefault();
@@ -85,7 +91,6 @@ const Test = () => {
 			setCount(count+1);
 		}
 	}
-
 	const ResetTest = () =>{
 		setStart(true);
 		localStorage.removeItem("choices");
@@ -156,7 +161,9 @@ const Test = () => {
 		}
 		{
 			allQuestions &&
-
+			
+			<div className={styles.TestMainContainer}>	
+			<section className={styles.TestSide}>
 			<div>
 			<section className={styles.Subject}> <h1>{subject}</h1><h1><Timer duration={30 * 60 * 1000}/></h1></section>
 			<TestProp
@@ -166,6 +173,17 @@ const Test = () => {
 			<button onClick={getPreviousQuestion} className={styles.SubmissionFormButton}><span>&laquo; </span>Previous</button>
 			{ count <= 38 ? (<button onClick={getNextQuestion} className={styles.SubmissionFormButton}>Next<span> &raquo;</span></button>) : (<button onClick={getNextQuestion} className={styles.SubmissionFormButton}>Submit<span></span></button>)}
 			</div>
+			</div>
+			</section>
+			<section className={styles.NumbersButton}>
+				<div className={styles.NumbersSide}>
+			{
+				numbers.map((num)=>{
+                return <button onClick={((e) => setCount(num-1))} className={styles.Numbers}>{num}</button>
+            	})
+			}	</div>
+			<button onClick={handleSubmit} className={styles.SubmitTest}>Finish Test</button>
+			</section>
 			</div>
 			
 		}

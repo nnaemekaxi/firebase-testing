@@ -77,12 +77,34 @@
     border-radius: 8px;
     color: black;
 }
+.TestMainContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.TestSide{
+    width: 60%;
+}
+.NumbersButton{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.NumbersSide{
+    border-radius: 10px;
+    background-color: #FAFAFA;
+}
+.Numbers{
+    font-size: 16px;
+    padding: 10px;
+}
 .Subject{
     width: 80%;
     position: fixed;
-    top: 65px;
+    top: 68px;
     z-index: 10000;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
 }
@@ -140,9 +162,21 @@
     border-radius: 8px;
 }
 @media screen and (max-width: 767px){
+    .TestMainContainer{
+        flex-direction: column;
+    }
+    .TestSide{
+        width: 100%;
+    }
+    .NumbersButton{
+        margin-top: 16px;
+        width: 100%;
+    }
     .Subject{
         background-color: white;
+        top: 65px;
     }
+
 }
 @media screen and (max-width: 600px) {
     .Subject{
