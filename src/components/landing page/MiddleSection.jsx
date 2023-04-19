@@ -40,7 +40,7 @@ const MiddleSection = () => {
 					<div className="mobile-view-btn">
 					{
 						user ? 
-							<Link to="/take-a-test">
+							<Link to="/study-plan">
 								<ColorBgBtn 
 								borderRadius="0.313rem" 
 								padding="0.625rem 2.188rem"
@@ -56,7 +56,7 @@ const MiddleSection = () => {
 					<div className="desktop-view-btn">
 					{
 						user ? 
-							<Link to="/take-a-test">
+							<Link to="/study-plan">
 								<ColorBgBtn 
 								padding="1.25rem 2.625rem" 
 								/></Link>
@@ -78,7 +78,7 @@ const MiddleSection = () => {
 					<div className="mobile-view-btn">
 					{
 						user ? 
-							<Link to="/take-a-test"><ColorBgBtn
+							<Link to="/study-plan"><ColorBgBtn
 								borderRadius="0.313rem"
 								padding="0.625rem 2.188rem"
 								text="take test"
@@ -95,7 +95,7 @@ const MiddleSection = () => {
 					<div className="desktop-view-btn">
 					{
 						user ? 
-							<Link to="/take-a-test">	
+							<Link to="/study-plan">	
 								<ColorBgBtn
 								padding="1.25rem 2.625rem"
 								text="take test"
