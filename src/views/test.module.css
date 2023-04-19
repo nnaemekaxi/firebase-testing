@@ -129,6 +129,16 @@
 .Loading{
     text-align: center;
 }
+.SubmitTest{
+    background-color: blue;
+    width: 100px;
+    height: 35px;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border-radius: 8px;
+}
 @media screen and (max-width: 767px){
     .Subject{
         background-color: white;
