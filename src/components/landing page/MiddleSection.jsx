@@ -78,7 +78,7 @@ const MiddleSection = () => {
 					<div className="mobile-view-btn">
 					{
 						user ? 
-							<Link to="/study-plan"><ColorBgBtn
+							<Link to="/take-a-test"><ColorBgBtn
 								borderRadius="0.313rem"
 								padding="0.625rem 2.188rem"
 								text="take test"
@@ -95,7 +95,7 @@ const MiddleSection = () => {
 					<div className="desktop-view-btn">
 					{
 						user ? 
-							<Link to="/study-plan">	
+							<Link to="/take-a-test">	
 								<ColorBgBtn
 								padding="1.25rem 2.625rem"
 								text="take test"

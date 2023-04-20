@@ -5,7 +5,7 @@ import StudyProgress from "../components/study plan/StudyProgress";
 
 const StudyPlan = () => {
 	return (
-		<main className="study-plan">
+		<main className="study-plan" style={{width: "95vw"}}>
 			<Categories />
 			<Schedule />
 			<StudyProgress />

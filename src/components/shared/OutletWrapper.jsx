@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { NavLink, Outlet, useLocation, Link } from "react-router-dom";
 import { styled, useTheme } from "@mui/material/styles";
 import ClickAwayListener from "@mui/base/ClickAwayListener";
 import {
@@ -32,9 +32,9 @@ import { ReactComponent as TestIcon } from "../../assets/svg/test-icon.svg";
 const drawerWidth = 240;
 
 const drawerItems = [
-	{ text: "dashboard", icon: <HomeIcon /> },
-	{ text: "resources", icon: <ResourcesIcon /> },
-	{ text: "take a test", icon: <TestIcon /> },
+	{ text: "dashboard", link: "/study-plan", icon: <HomeIcon /> },
+	{ text: "resources", link: "/pricing", icon: <ResourcesIcon /> },
+	{ text: "take a test", link: "/take-a-test", icon: <TestIcon /> },
 ];
 
 // STUB: setup custom components for main, appbar & drawerheader
@@ -46,6 +46,7 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
 			easing: theme.transitions.easing.sharp,
 			duration: theme.transitions.duration.leavingScreen,
 		}),
+		overflow: "hidden",
 		marginLeft: `-${drawerWidth}px`,
 		...(open && {
 			transition: theme.transitions.create("margin", {
@@ -53,6 +54,7 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
 				duration: theme.transitions.duration.enteringScreen,
 			}),
 			marginLeft: 0,
+			
 		}),
 	})
 );
@@ -140,15 +142,17 @@ const OutletWrapper = ({ children }) => {
 	const drawer = (
 		<List>
 			{drawerItems.map((item, index) => {
-				const { text, icon } = item;
+				const { text, link, icon } = item;
 				return (
 					<ListItemButton
 						key={index}
 						selected={selectedIndex === index}
 						onClick={(event) => handleListItemClick(event, index)}
 					>
+						<Link to={link} style={{display:"flex"}}>
 						<ListItemIcon>{icon}</ListItemIcon>
 						<ListItemText primary={text} />
+						</Link>
 					</ListItemButton>
 				);
 			})}
