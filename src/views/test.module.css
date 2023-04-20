@@ -17,6 +17,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 .TestForm label{
     font-weight: 600;
@@ -111,13 +112,21 @@
 .SubmissionFormButton span{
     font-size: 24px;
 }
+.FinalScore{
+    text-align: center;
+}
+.ResetForm{
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
 .ResetButton{
     display: block;
-    margin-top: 64px;
-    width: 300px;
-    padding: 5px 0;
+    width: 150px;
+    font-size: 18px;
     text-align: center;
-    height: 45px;
+    height: 40px;
     border-radius: 8px;
     color: white;
     background-color: #0F67F5;
@@ -179,6 +188,9 @@
 
 }
 @media screen and (max-width: 600px) {
+    .TestForm{
+        width: 100%;
+    }
     .Subject{
         font-size: 12px;
     }
@@ -188,4 +200,9 @@
     .RadioLabel{
         font-size: 14px;
     }
+}
+@media screen and (max-width: 340px) {
+.TestForm select, .TestForm button{
+    width: 95%;
+}
 }

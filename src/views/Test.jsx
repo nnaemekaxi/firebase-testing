@@ -189,9 +189,9 @@ const Test = () => {
 		}
 		{
 			publish &&
-			<h1>Total Score: {finalScore}/40
-			<form onSubmit={ResetTest}><button type="submit" className={styles.ResetButton}>Try Again</button></form>
-			</h1>
+			<h3 className={styles.FinalScore}>Total Score: {finalScore}/40
+			<form onSubmit={ResetTest} className={styles.ResetForm}><button type="submit" className={styles.ResetButton}>Try Again</button></form>
+			</h3>
 		}
 		
 	</div>;
