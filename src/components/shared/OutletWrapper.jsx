@@ -68,6 +68,7 @@ const TestMain = styled("main", {
 		easing: theme.transitions.easing.sharp,
 		duration: theme.transitions.duration.leavingScreen,
 	}),
+	overflow: "hidden",
 	marginLeft: `-${drawerWidth}px`,
 	[theme.breakpoints.up("sm")]: {
 		width: `calc(100% - ${drawerWidth}px)`,
