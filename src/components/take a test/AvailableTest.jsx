@@ -13,7 +13,7 @@ const tests = [
 	},
 	{
 		coinValue: 50,
-		time: 40,
+		time: 30,
 		topic: "mathematics",
 		imagePreview: testPreview2,
 	},

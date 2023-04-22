@@ -1,16 +1,22 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+import { UserAuth } from "../../context/AuthContext";
 import { Menu, MenuItem } from "@mui/material";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import Logout from "@mui/icons-material/Logout";
 
 export default function AccountMenu(props) {
 	const { handleMenuClose, openMenu, anchorEl } = props;
-	const navigate = useNavigate();
+	const { logOut } = UserAuth();
+	// const navigate = useNavigate();
 
-	const navigateHome = () => {
-		navigate("/");
-	};
+	// const navigateHome = () => {
+	// 	navigate("/");
+	// };
+
+	const handleLogOut = () => {
+		logOut();
+	}
 
 	return (
 		<>
@@ -49,7 +55,7 @@ export default function AccountMenu(props) {
 				anchorOrigin={{ horizontal: 23, vertical: "bottom" }}
 				transformOrigin={{ horizontal: "right", vertical: "top" }}
 			>
-				<MenuItem onClick={navigateHome}>
+				<MenuItem onClick={handleLogOut}>
 					<ListItemIcon>
 						<Logout fontSize="small" />
 					</ListItemIcon>

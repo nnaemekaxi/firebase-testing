@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import subjectPreview from "../../assets/images/subjectPreview.png";
 import Coin from "../coin/Coin";
 import ColorBgBtn from "../button/ColorBgBtn";
@@ -13,7 +14,7 @@ const TestCard = (props) => {
 					<h5>{topic}</h5>
 					<p>{time} minutes</p>
 				</div>
-				<ColorBgBtn text="start" padding="0.38rem 0.39rem" />
+				<Link to="/test"><ColorBgBtn text="start" padding="0.38rem 0.39rem" /></Link>
 			</div>
 			<div className="image-wrapper">
 				<img src={imagePreview} alt={topic} />

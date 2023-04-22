@@ -5,7 +5,7 @@ const Header = () => {
 	return (
 		<section className="header">
 			<div className="text-wrapper">
-				<h1>Welcome Olumide,</h1>
+				<h1>Welcome Smartlearner,</h1>
 				<p>It’s time to gain more wins!!!</p>
 			</div>
 

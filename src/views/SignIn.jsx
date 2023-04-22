@@ -61,7 +61,7 @@ const SignIn = () => {
 			<FacebookIcon />
 			<InstagramIcon />
 		</div>
-		<p>Don’t have an account? <Link to="/signup">Sign Up</Link></p>
+		<p>Don’t have an account? <Link to="/signup" style={{color:"#0F67F5", fontWeight:"600"}}>Sign Up</Link></p>
 	  </div>
 	</div>
   )

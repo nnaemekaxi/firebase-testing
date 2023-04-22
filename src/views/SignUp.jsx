@@ -72,7 +72,7 @@ const SignUp = () => {
 					<InstagramIcon />
 				</div>
 				<p>
-					Already have an account? <Link to="/signin">Sign In</Link>
+					Already have an account? <Link to="/signin" style={{color:"#0F67F5", fontWeight:"600"}}>Sign In</Link>
 				</p>
 			</div>
 		</div>
