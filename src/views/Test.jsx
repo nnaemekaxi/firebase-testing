@@ -179,7 +179,7 @@ const Test = () => {
 				<div className={styles.NumbersSide}>
 			{
 				numbers.map((num)=>{
-                return <button onClick={((e) => setCount(num-1))} className={styles.Numbers}>{num}</button>
+					return <span><input type="radio" name="number" id={`number${num}`} onChange={((e) => setCount(num-1))} className={styles.Numbers} /> <label htmlFor={`number${num}`} className={styles.NumberButton}>{num}</label></span>
             	})
 			}	</div>
 			<button onClick={handleSubmit} className={styles.SubmitTest}>Finish Test</button>

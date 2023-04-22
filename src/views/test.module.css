@@ -86,20 +86,6 @@
 .TestSide{
     width: 60%;
 }
-.NumbersButton{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.NumbersSide{
-    border-radius: 10px;
-    background-color: #FAFAFA;
-}
-.Numbers{
-    font-size: 16px;
-    padding: 10px;
-}
 .Subject{
     width: 80%;
     position: fixed;
@@ -136,10 +122,10 @@
     display: flex;
     justify-content: space-between;
 }
-.SelectRadio{
+.SelectRadio, .Numbers{
     display: none;
 }
-.SelectRadio:checked ~ .RadioLabel{
+.SelectRadio:checked ~ .RadioLabel, .Numbers:checked ~ .NumberButton{
     color: white;
     background-color: #0F67F5;
 }
@@ -156,6 +142,22 @@
 }
 .RadioLabel:hover{
     background-color: #aaa5a5;
+}
+.NumbersButton{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.NumbersSide{
+    border-radius: 10px;
+    padding: 10px 5px;
+    background-color: #FAFAFA;
+}
+.NumberButton{
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 45%;
 }
 .Loading{
     text-align: center;
