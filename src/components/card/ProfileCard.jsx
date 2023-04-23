@@ -10,7 +10,7 @@ const ProfileCard = () => {
 				<div className="avatar">
 					<img src={avatar} alt="avatar" loading="lazy" />
 				</div>
-				<h3>lieutenant</h3>
+				<h3>smartlearner</h3>
 			</div>
 
 			<div className="profile-details-wrapper">
