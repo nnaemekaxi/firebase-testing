@@ -99,6 +99,8 @@ const Test = () => {
 	const ResetTest = () =>{
 		setStart(true);
 		setCount(0);
+		localStorage.clear();
+		location.reload();
 		setPublish(false);
 	}
 

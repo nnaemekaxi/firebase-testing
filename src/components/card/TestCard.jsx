@@ -5,6 +5,10 @@ import Coin from "../coin/Coin";
 import ColorBgBtn from "../button/ColorBgBtn";
 
 const TestCard = (props) => {
+	const handleTestReset = () => {
+		localStorage.clear();
+	}
+	
 	const { coinValue, imagePreview, time, topic } = props;
 	return (
 		<div className="test-card">
@@ -14,7 +18,7 @@ const TestCard = (props) => {
 					<h5>{topic}</h5>
 					<p>{time} minutes</p>
 				</div>
-				<Link to="/test"><ColorBgBtn text="start" padding="0.38rem 0.39rem" /></Link>
+				<Link to="/test" onClick={handleTestReset}><ColorBgBtn text="start" padding="0.38rem 0.39rem" /></Link>
 			</div>
 			<div className="image-wrapper">
 				<img src={imagePreview} alt={topic} />
