@@ -23,6 +23,11 @@ const Test = () => {
 	
 	async function handleTest(e){
 		e.preventDefault();
+		
+		if (localStorage.getItem("choice")){
+			localStorage.clear();
+			location.reload();
+		}
 
 		const mysubject = subject
 		setStart(false)	
@@ -93,10 +98,7 @@ const Test = () => {
 	}
 	const ResetTest = () =>{
 		setStart(true);
-		localStorage.removeItem("choices");
-		localStorage.removeItem("choice");
 		setCount(0);
-		location.reload();
 		setPublish(false);
 	}
 
